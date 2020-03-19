@@ -16,7 +16,7 @@
       <div class="container-fluid bg-warning text-center p-3 botConBorder">
           <header class="headBorder">
             <h1>Bears, Beets, Battlestar Galactica</h1>
-            <img class="pb-1" style="height: 300px; width: 350px;" src="headimg.png" alt="Bears, Beets, Battlestar Galactica">
+            <img class="pb-1" style="height: 300px; width: 350px;" src="images\headimg.png" alt="Bears, Beets, Battlestar Galactica">
           </header>
       </div>
 
@@ -25,27 +25,22 @@
         <div class="row">
             <div class="col-5 my-auto">
                 <div class="card border-0 mx-auto text-center" style="width: 18rem;">
-                    <img src="jimimg.png" class="card-img-top" alt="PLAYER">
-                    <div class="card-body cardD">
-                      <h5 class="card-title text-center text-warning">Player</h5>
-                      <button onclick="play(0)" class="btn btn-primary"> 
-                          Bears
-                    </button>
-                    <button onclick="play(1)" class="btn btn-primary"> 
-                          Beets
-                    </button>
-                    <button onclick="play(2)" class="btn btn-primary"> 
-                          Battlestar Galactica
-                    </button>
+                    <img src="images\jimimg.png" class="card-img-top" alt="PLAYER">
+                    <div class="card-body cardD pt-1">
+                      <h3 class="card-title text-center text-warning mb-0">Player</h3>
+                      <h5><u>Choose Carefully</u></h5>
+                      <input onclick="play(0); bearBtn()" id="bear-btn" type="image" src="images\bearimg.png" class="bbbbtn">
+                      <input onclick="play(1); beetBtn()" id="beet-btn" type="image" src="images\beetimg.png" class="bbbbtn">
+                      <input onclick="play(2); bsgBtn()" id="bsg-btn" type="image" src="images\bsgimg.png" class="bbbbtn">
                     </div>
                   </div>
             </div>
             <div class="col-2 m-auto text-center">
-                <img style="height: 100px; width: 100px;" src="vsimg.png" alt="VERSUS">
+                <img style="height: 100px; width: 100px;" src="images\vsimg.png" alt="VERSUS">
             </div>
             <div class="col-5">
                 <div class="card border-0 mx-auto my-5" style="width: 18rem;">
-                    <img src="dwightimg.png" class="card-img-top" alt="...">
+                    <img src="images\dwightimg.png" class="card-img-top" alt="...">
                     <div class="card-body cardD">
                       <h5 class="card-title text-center text-warning">Computer</h5>
                     </div>
@@ -57,25 +52,31 @@
     <!-- Players Choices -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-5"></div>
-            <div class="col-2 text-center">
-                <img class="pr-3" style="width: 100%; height: 100%;" src="explodeimg.png" alt="BOOM">
+            <div class="col-5 text-center my-4">
+                <div id="insertImg"></div>
             </div>
-            <div class="col-5"></div>
+            <div class="col-2 text-center">
+                <img class="pr-3" style="width: 100%; height: 100%;" src="images\explodeimg.png" alt="BOOM">
+            </div>
+            <div class="col-5">
+                <div id="insertBotImg"></div>
+            </div>
         </div>
     </div>
 
     <!-- Winner Display -->
-    <div class="container-fluid">
+    <div class="container-fluid borderTop">
         <div class="row">
-            <div class="col-12"></div>
+            <div class="col-12 text-center">
+                <h1>Winner Winner Chicken Dinner!</h1>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="container-fluid headBorder m-auto p-0">
         <footer class="text-center">
-            <img class="my-2" style="height: 100px; height: 100px;" src="ggimg.png" alt="">
+            <img class="my-2" style="height: 100px; height: 100px;" src="images\ggimg.png" alt="">
         </footer>
     </div>
 

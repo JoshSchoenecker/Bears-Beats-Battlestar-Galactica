@@ -8,7 +8,7 @@
 }
 
 .bgGalaxyImage {
-    background-image: url(../bggalaxyimg.png);
+    background-image: url(../images/bggalaxyimg.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -17,4 +17,25 @@
 
 .cardD {
     background-color: rgb(117, 117, 117);
+}
+
+.borderTop {
+    border: 2px groove black;
+}
+
+/* Buttons */
+
+.bbbbtn {
+    height: 100px;
+    width: 80px;
+}
+
+
+/* Player choice images */
+
+.pcImg {
+    height: 200px;
+    width: 150px;
+    border: 2px solid rgb(12, 12, 12);
+    box-shadow: 3px 3px 3px 3px #ffc107;
 }
